@@ -32,7 +32,7 @@ public class locators {
 		public static By imgInternationalBanking=By.xpath(".//*[@id='Table_07']/tbody/tr/td[5]/a/img");
 		
 		//img About Us
-		public static By imgAboutUs=By.xpath(".//*[@id='Table_07']/tbody/tr/td[6]/a/img");
+		public static By imgAboutUs=By.xpath("//*[@id='Table_07']/tbody/tr/td[6]/a/img");
 		
 		//img Personal
 		public static By imgPersonal=By.id("personal");

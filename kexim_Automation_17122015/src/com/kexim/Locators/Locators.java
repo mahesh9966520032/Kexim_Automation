@@ -46,6 +46,9 @@ public class Locators {
 		//btn Submit
 		public static By btnSubmit=By.xpath("//input[@src='images/submit.jpg']");
 		
+		//btn Reset
+		public static By btnReset=By.xpath("//input[contains(@src,'eset.jpg')]");
+		
 					
 	}//Global end
 	

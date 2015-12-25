@@ -100,7 +100,7 @@ public class locators {
 		public static By lstCity=By.xpath("//select[starts-with(@id,'lst_city')]");
 		
 		//btn Search
-		public static By btnSearch=By.xpath("");
+		public static By btnSearch=By.id("btn_search");
 				
 		//btn Clear
 		public static By btnClear=By.xpath("//input[starts-with(@id,'btn_cl')]");
@@ -108,8 +108,15 @@ public class locators {
 		//btn Submit
 		public static By btnSubmit=By.xpath("//input[@src='images/submit.jpg']");
 		
-		//btn reset
-		public static By btnReset=By.xpath("");
+		//btn Reset
+		public static By btnReset=By.xpath("//input[contains(@src,'eset.jpg')]");
+		
+		//btn Cancel
+		public static By btnCancel=By.xpath("//input[contains(@src,'ancel.jpg')]");
+		
+		
+	
+				
 				
 	}
 }

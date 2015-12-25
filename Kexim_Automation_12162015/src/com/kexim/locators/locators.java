@@ -114,9 +114,7 @@ public class locators {
 		//btn Cancel
 		public static By btnCancel=By.xpath("//input[contains(@src,'ancel.jpg')]");
 		
-		
-	
-				
+					
 				
 	}
 }

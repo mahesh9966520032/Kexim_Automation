@@ -60,7 +60,6 @@ public class locators {
 		
 		//lnk Site Map	
 		public static By lnkSiteMap=By.linkText("Site Map");
-		
 
 		
 	}

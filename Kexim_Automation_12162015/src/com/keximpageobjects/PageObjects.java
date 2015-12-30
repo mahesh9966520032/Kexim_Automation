@@ -16,27 +16,50 @@ public class PageObjects {
 			//lst BranchName
 			public static Select lstBranchName(WebDriver driver)
 			{
+				try{
 				 return new Select(driver.findElement(locators.KeximHome.lstBranchName));
-					
+				}catch(Exception e)
+				{
+					e.printStackTrace();
+					return null;
+				}	
 			}
 			
 			//txt UserName
 			public static WebElement txtUserName(WebDriver driver)
 			{
+				try{
 				 return driver.findElement(locators.KeximHome.txtUserName);
-				
+				}catch(Exception e)
+				{
+					e.printStackTrace();
+					return null;
+				}
 			}
 			
 			//txt Password
 			public static WebElement txtPassword(WebDriver driver)
 			{
+				try{
 				return driver.findElement(locators.KeximHome.txtPassword);
+				}catch(Exception e)
+				{
+					e.printStackTrace();
+					return null;
+				}
+				
 			}
 			
 			//btn Login
 			public static WebElement btnLogin(WebDriver driver)
 			{
+				try{
 				return driver.findElement(locators.KeximHome.btnLogin);
+				}catch(Exception e)
+				{
+					e.printStackTrace();
+					return null;
+				}
 			}
 			
 			//img Home

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Admin login successfully]]>
+    </line>
+    <line>
+      <![CDATA[closing the successfully]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26283" started-at="2015-12-30T04:05:39Z" finished-at="2015-12-30T04:06:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26283" started-at="2015-12-30T04:05:39Z" finished-at="2015-12-30T04:06:05Z">
+      <class name="com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin@1ef7fe8e]" name="beforeMethod" is-config="true" duration-ms="20201" started-at="2015-12-30T09:35:39Z" finished-at="2015-12-30T09:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin@1ef7fe8e]" name="f" duration-ms="4408" started-at="2015-12-30T09:35:59Z" finished-at="2015-12-30T09:36:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Admin login successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin@1ef7fe8e]" name="afterMethod" is-config="true" duration-ms="1622" started-at="2015-12-30T09:36:03Z" finished-at="2015-12-30T09:36:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[closing the successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

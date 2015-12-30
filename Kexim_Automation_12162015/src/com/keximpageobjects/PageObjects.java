@@ -90,13 +90,13 @@ public class PageObjects {
 			//lnk Customer Service
 			public static WebElement lnkCustomerervice(WebDriver driver)
 			{
-				return driver.findElement(locators.KeximHome.lnkCustomerervice);
+				return driver.findElement(locators.KeximHome.lnkCustomerService);
 			}
 			
 			//lnk International Banking FAQ's
 			public static WebElement lnkInternationalBankingFAQs(WebDriver driver)
 			{
-				return driver.findElement(locators.KeximHome.lnkInternationalBankingFAQs);
+				return driver.findElement(locators.KeximHome.lnkInternetBankingFAQs);
 			}	
 			
 			
@@ -161,9 +161,9 @@ public class PageObjects {
 	    	//btn Search
 	    	public static WebElement btnSearch(WebDriver driver)
 	    	{
-	    		return driver.findElement(locators.Global.btnsearch);		
+	    		return driver.findElement(locators.Global.btnSearch);		
 	    	}
-	    		`
+	    		
 	    	
 	    }
 	    

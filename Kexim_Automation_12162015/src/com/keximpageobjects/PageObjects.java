@@ -16,13 +16,14 @@ public class PageObjects {
 			//lst BranchName
 			public static Select lstBranchName(WebDriver driver)
 			{
+			
 				try{
 				 return new Select(driver.findElement(locators.KeximHome.lstBranchName));
 				}catch(Exception e)
 				{
 					e.printStackTrace();
 					return null;
-				}	
+				}
 			}
 			
 			//txt UserName
@@ -167,33 +168,64 @@ public class PageObjects {
 	    		return driver.findElement(locators.Global.imgEmployee);	
 	    	}
 	    	//lst Country
-	    	public static WebElement lstCountry(WebDriver driver)
+	    	public static Select lstCountry(WebDriver driver)
 	    	{
-	    		return driver.findElement(locators.Global.lstCountry);	
+	    		return new Select(driver.findElement(locators.Global.lstCountry));	
 	    	}
 	    	//lst State
-	    	public static WebElement lstState(WebDriver driver)
+	    	public static Select lstState(WebDriver driver)
 	    	{
-	    		return driver.findElement(locators.Global.lstState);	
+	    		return new Select(driver.findElement(locators.Global.lstState));	
 	    	}
 	    	//lst City
-	    	public static WebElement lstCity(WebDriver driver)
+	    	public static Select lstCity(WebDriver driver)
 	    	{
-	    		return driver.findElement(locators.Global.lstCity);	
+	    		return new Select(driver.findElement(locators.Global.lstCity));	
 	    	}
 	    	//btn Search
 	    	public static WebElement btnSearch(WebDriver driver)
 	    	{
 	    		return driver.findElement(locators.Global.btnSearch);		
 	    	}
-	    		
+	        //submit
+	    	public static WebElement btnSubmit(WebDriver driver)
+	    	{
+	    		return driver.findElement(locators.Global.btnSubmit);		
+	    	}
+	    	
+	    	
 	    	
 	    }
 	    
-	    
+	    //page objects of newbranch home
+	    public static class NewBranchHome
+	    {
+	    	//branchname
+	    	public static WebElement txtBranchName(WebDriver driver)
+	    	{
+	    		return  driver.findElement(locators.NewBranchHome.txtBranchName);
+	    	}
+	    	public static WebElement txtAddress1(WebDriver driver)
+	    	{
+	    		return driver.findElement(locators.NewBranchHome.txtAddress);
+	    	}
+	    	public static WebElement txtZipCode(WebDriver driver)
+	    	{
+	    		return driver.findElement(locators.NewBranchHome.txtZipCode);
+	    	}
+	    	
+	    	
+	    	
+	    }
 	    
 		
-		
+		public static class Branches
+		{
+			public static WebElement imgNewBranches(WebDriver driver)
+			{
+			    return driver.findElement(locators.BranchesHome.imgNewBranch);
+			}
+		}
 
 
 }

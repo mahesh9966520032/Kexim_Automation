@@ -1,37 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[Admin login successfully]]>
-    </line>
-    <line>
-      <![CDATA[closing the successfully]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26283" started-at="2015-12-30T04:05:39Z" finished-at="2015-12-30T04:06:05Z">
+  <suite name="Default suite" duration-ms="121" started-at="2016-01-27T03:23:47Z" finished-at="2016-01-27T03:23:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26283" started-at="2015-12-30T04:05:39Z" finished-at="2015-12-30T04:06:05Z">
-      <class name="com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin@1ef7fe8e]" name="beforeMethod" is-config="true" duration-ms="20201" started-at="2015-12-30T09:35:39Z" finished-at="2015-12-30T09:35:59Z">
+    <test name="Default test" duration-ms="121" started-at="2016-01-27T03:23:47Z" finished-at="2016-01-27T03:23:47Z">
+      <class name="com.kexim.sanitychecks.TestMaker">
+        <test-method status="FAIL" signature="f()[pri:0, instance:com.kexim.sanitychecks.TestMaker@33e5ccce]" name="f" duration-ms="60" started-at="2016-01-27T08:53:47Z" finished-at="2016-01-27T08:53:47Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Two suites cannot have the same name: Suite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Two suites cannot have the same name: Suite
+	at org.testng.TestNG.checkSuiteNamesInternal(TestNG.java:980)
+	at org.testng.TestNG.checkSuiteNames(TestNG.java:973)
+	at org.testng.TestNG.sanityCheck(TestNG.java:946)
+	at org.testng.TestNG.run(TestNG.java:998)
+	at com.kexim.sanitychecks.TestMaker.f(TestMaker.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin@1ef7fe8e]" name="f" duration-ms="4408" started-at="2015-12-30T09:35:59Z" finished-at="2015-12-30T09:36:03Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Admin login successfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin@1ef7fe8e]" name="afterMethod" is-config="true" duration-ms="1622" started-at="2015-12-30T09:36:03Z" finished-at="2015-12-30T09:36:05Z">
-          <reporter-output>
-            <line>
-              <![CDATA[closing the successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.kexim.adminlogintestsuite.AD_tc001_ValidateAdminLogin -->
+      </class> <!-- com.kexim.sanitychecks.TestMaker -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

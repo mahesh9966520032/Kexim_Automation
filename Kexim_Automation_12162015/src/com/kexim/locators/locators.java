@@ -115,4 +115,18 @@ public class locators {
 		
 							
 	}
+	
+	public static class NewBranchHome
+	{
+		public static By txtBranchName=By.id("txtbName");
+	    public static By txtAddress=By.id("txtAdd1");
+	    public static By txtZipCode=By.id("txtZip");
+	    
+	}
+	public static class BranchesHome
+	{
+		public static By imgNewBranch=By.id("BtnNewBR");
+	}
+	
+	
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="branchestestsuite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="com.kexim.branchestestsuite.BR_tc002_validateNewBranches"/>
+      <class name="com.kexim.branchestestsuite.WebTableUpdation"/>
+      <class name="com.kexim.branchestestsuite.BR_tc001_validateBranches"/>
+      <class name="com.kexim.branchestestsuite.BR_tc003_createBranch"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

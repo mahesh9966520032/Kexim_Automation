@@ -1,0 +1,41 @@
+<project name="Kexim_Automation_12162015" basedir="." default="run">
+	
+	<!-- workspace location -->
+	<property name="workspace" value="C:\Users\mindq\git\Kexim_Automation2\Kexim_Automation3\Kexim_Automation_12162015" />
+	<!-- jar files location -->
+	<property name="jarfile" value="${workspace}/jars" ></property>
+	<!-- java files location -->
+	<property name="src" value="${workspace}/src"></property>
+	<!-- compiled files location-->
+	<property name="classfiles" value="${workspace}/classes"></property>
+	
+	<!-- setting up the jar files -->
+	<target name="setJarFiles" unless="setupjarsfiles">		
+		<path id="ref">
+		     <fileset dir="${jarfile}" includes="*.jar"  ></fileset> 
+		</path>
+		<pathconvert property="setupjarsfiles" refid="ref"></pathconvert>		
+	</target>
+	
+	<!--creating tag for testng -->
+	<target name="setTestNGTag" depends="setJarFiles">
+	 <taskdef name="testng" classpath="C:\Users\mindq\git\Kexim_Automation2\Kexim_Automation3\Kexim_Automation_12162015\jars\testng-6.9.9.jar" classname="org.testng.TestNGAntTask"></taskdef>
+	</target>
+	
+	<!-- compile the java files-->
+	<target name="compile" depends="setTestNGTag">
+	<javac srcdir="${src}" destdir="${classfiles}" classpath="${setupjarsfiles}"></javac>
+	</target>
+	
+	<!-- run the xml files-->
+	<target name="run" depends="compile">
+	   <testng classpath="${setupjarsfiles}:${classfiles}">
+	   	<xmlfileset dir="${workspace}" includes="run.xml"/>
+	   </testng>
+		
+	</target>
+	
+	
+	
+
+</project>
